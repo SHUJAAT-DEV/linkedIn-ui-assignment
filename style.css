@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(235, 235, 235);
+}
+
+p {
+  font-size: 0.8rem;
+  color: gray;
+}
+h6 {
+  color: black;
+}
+
+strong {
+  color: black;
+  font-size: 12px;
+}
+small {
+  font-size: 10px;
+  color: grey;
+}
+
+div i {
+  color: gray;
+}
+
+/* ------------------------------------------------ */
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 4rem;
+  background: #fff;
+}
+
+nav .wrapper .left,
+nav .wrapper .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav .wrapper .left {
+  padding-left: 4rem;
+}
+
+nav .wrapper .right {
+  padding-right: 12rem;
+}
+
+nav .wrapper .logo i {
+  font-size: 2.5rem;
+  color: rgb(17, 71, 172);
+}
+
+nav .wrapper .left .input {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  gap: 0.5rem;
+  align-items: center;
+  display: flex;
+  background: transparent;
+  box-shadow: 0px 1px #888888;
+  margin-bottom: 18px;
+}
+
+nav .wrapper .left .input i {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+nav .wrapper .right .home {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right .me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: gray;
+}
+
+div img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* -----------------Layout Design----------- */
+
+.container {
+  display: grid;
+  grid-template-columns: 24% 52% 24%;
+  gap: 1rem;
+  width: 85%;
+  margin: 1rem auto;
+}
+
+aside,
+main,
+.right_side {
+  background: #fff;
+  height: 60vh;
+  position: relative;
+  border-radius: 1rem;
+}
+/* --------------------------------------------------------- */
+
+/* --------------------sidebar---------- */
+.profile_img img {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 3.6rem;
+  width: 75px;
+}
+aside .sidebar .profile {
+  flex-direction: column;
+  display: flex;
+  margin-left: 9rem;
+  margin-top: -3.5rem;
+}
+
+.sidebar .view {
+  margin-top: 2.8rem;
+  margin-bottom: 1.9rem;
+  margin-left: 3.7rem;
+  column-gap: 2rem;
+}
+
+.sidebar_icon {
+  margin-top: 1rem;
+  margin-left: 4rem;
+  column-gap: 2rem;
+}
+.group,
+.hastag,
+.page,
+.statistics,
+.item,
+.profile_view {
+  display: flex;
+  gap: 1rem;
+  margin: 12px;
+}
+/* -------------------------Left Sidebar End Here----------- */
+
+/* main section start here-------------- */
+main {
+  background: #fff;
+  border-radius: 0.6rem;
+  height: 23vh;
+}
+.comment {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.text {
+  margin-top: 1%;
+  margin-left: 2.4rem;
+  font-size: 12px;
+  font-weight: 300;
+}
+.main_section input {
+  text-align: center;
+  margin-top: 1.8rem;
+  border: none transparent;
+  outline: none;
+}
+.main_media {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1.9rem;
+  margin-top: 2.2rem;
+  color: gray;
+}
+
+.main_heading {
+  background: #fff;
+  margin-top: 2.5rem;
+  height: 80vh;
+  border-radius: 0.6rem;
+}
+
+.main_content {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
+}
+.content {
+  margin-left: 1.3rem;
+  color: black;
+}
+
+.main_image {
+  width: 111%;
+  margin-top: 1.4rem;
+}
+
+.like {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1.6rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* ------------------------Right Sidebar Start Here----------------------------------------- */
+
+.recommended_profile {
+  display: grid;
+  margin-left: 1.4rem;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.profile_1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.7rem;
+  margin-top: -2.7rem;
+}
+.profile1 {
+  display: flex;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  align-items: center;
+  padding: 0px 10px 3px;
+}
