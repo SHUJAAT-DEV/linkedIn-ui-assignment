@@ -8,7 +8,6 @@
 body {
   background: rgb(235, 235, 235);
 }
-
 p {
   font-size: 0.8rem;
   color: gray;
@@ -31,65 +30,71 @@ div i {
 }
 
 /* ------------------------------------------------ */
-nav .wrapper {
+
+nav .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 0 4rem;
   background: #fff;
-  width: auto;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
 }
 
-nav .wrapper .left,
-nav .wrapper .right {
+nav .navbar .left,
+nav .navbar .right {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
 }
 
-nav .wrapper .left {
+nav .navbar .left {
   padding-left: 4rem;
 }
 
-nav .wrapper .right {
+nav .navbar .right {
   padding-right: 12rem;
 }
 
-nav .wrapper .logo i {
+nav .navbar .logo i {
   font-size: 2.5rem;
   color: rgb(17, 71, 172);
 }
 
-nav .wrapper .left .input {
-  background: rgb(255, 255, 255);
-  width: 100%;
+.input {
+  display: flex;
   padding: 0.5rem 0.8rem;
   gap: 0.5rem;
   align-items: center;
-  display: flex;
-  background: transparent;
+}
+nav div input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
   box-shadow: 0px 1px gray;
-  margin-bottom: 18px;
 }
 
-nav .wrapper .left .input i {
+nav .navbar .left .input i {
   font-size: 0.8rem;
   color: gray;
 }
 
-nav .wrapper .right .home {
+nav .navbar .right .home {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
 
-nav .wrapper .right .network,
-nav .wrapper .right .jobs,
-nav .wrapper .right .message,
-nav .wrapper .right .notification,
-nav .wrapper .right .me {
+nav .navbar .right .network,
+nav .navbar .right .jobs,
+nav .navbar .right .message,
+nav .navbar .right .notification,
+nav .navbar .right .me {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -122,6 +127,7 @@ div img {
   gap: 1rem;
   width: 85%;
   margin: 1rem auto;
+  margin-top: 60px;
 }
 
 main {
@@ -175,6 +181,9 @@ aside .sidebar .profile {
   gap: 1rem;
   margin: 12px;
 }
+.profile_view {
+  box-shadow: 0px 1px gray;
+}
 
 /* ------------Left Sidebar Media Queries------------*/
 
@@ -187,18 +196,18 @@ aside .sidebar .profile {
 /* -------------------------Left Sidebar End Here----------- */
 
 /* main section start here-------------- */
-main {
+.main_section {
   background: #fff;
   border-radius: 0.6rem;
   height: 23vh;
 }
-.comment {
+/* .comment {
   display: flex;
   justify-content: space-between;
   height: 2rem;
   margin-top: 3rem;
   margin-left: 1rem;
-}
+} */
 .text {
   margin-top: 1%;
   margin-left: 2.4rem;
@@ -261,8 +270,9 @@ main {
 
 @media screen and (max-width: 1006px) {
   main {
-    width: 100vw;
+    width: 85vw;
     height: auto;
+    gap: 0rem;
   }
 }
 
