@@ -38,6 +38,7 @@ nav .wrapper {
   gap: 1rem;
   padding: 0 4rem;
   background: #fff;
+  width: auto;
 }
 
 nav .wrapper .left,
@@ -100,7 +101,18 @@ div img {
   width: 40px;
   border-radius: 50%;
 }
+/* ----------------------------Navbar Media Queries------ */
 
+@media screen and (max-width: 1080px) {
+  nav div input {
+    display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  nav div h6 {
+    display: none;
+  }
+}
 /* -----------------Layout Design----------- */
 
 .container {
@@ -163,6 +175,15 @@ aside .sidebar .profile {
   gap: 1rem;
   margin: 12px;
 }
+
+/* ------------Left Sidebar Media Queries------------*/
+
+@media screen and (max-width: 1006px) {
+  aside {
+    display: none;
+  }
+}
+
 /* -------------------------Left Sidebar End Here----------- */
 
 /* main section start here-------------- */
@@ -229,6 +250,22 @@ main {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1120px) {
+  main {
+    width: 70vh;
+  }
+  aside {
+    width: 30vh;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  main {
+    width: 100vw;
+    height: auto;
+  }
+}
+
 /* ------------------------Right Sidebar Start Here----------------------------------------- */
 
 .recommended_profile {
@@ -260,4 +297,11 @@ main {
   margin-left: 13rem;
   color: rgb(45, 102, 167);
   cursor: pointer;
+}
+/* --------------right sidebar  Media Queries---- */
+
+@media screen and (max-width: 1120px) {
+  .right_side {
+    display: none;
+  }
 }
